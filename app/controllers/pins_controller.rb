@@ -23,7 +23,6 @@ class PinsController < ApplicationController
     end
   end
   def edit
-
   end
 
   def update
@@ -39,7 +38,7 @@ class PinsController < ApplicationController
 
   private
   def pin_params
-    params.require(:pin).permit(:title,  :description)
+    params.require(:pin).permit(:title,  :description, :image)
   end
 
   def find_pin
